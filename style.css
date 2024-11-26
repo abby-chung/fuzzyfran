@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: auto 0;
     overflow-x: hidden;
     font-family: Lato, sans-serif;
     color: rgba(84, 87, 90, 1);
@@ -14,16 +14,17 @@ body {
 
 .wrapper {
   position: relative;
-  width: 1440px;
-  height: 1379px;
+  /* width: 1440px;
+  height: 1379px; */
   margin: auto;
   background: linear-gradient(180deg, #FFFFFF 0%, #F3F8F7 49.91%, #FFF9F5 94.19%);
 
 }
 
-.nav-bar {
-  color: #fff;
-  padding: 10px 20px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-container {
@@ -32,18 +33,29 @@ body {
   align-items: center;
 }
 
-.nav-menu {
+/* .nav-menu {
   list-style: none;
   margin: 0;
-  padding: 32px 0;
+  padding: 12px 0;
   display: flex;
+} */
+
+.nav-menu {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.nav-menu li {
+  text-align: center;
+  line-height: 50px;
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: rgba(84, 87, 90, 1);
+  color: rgb(52, 52, 52);
   padding: 8px 16px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -53,12 +65,24 @@ body {
   border-radius: 4px;
 }
 
+.landing-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+  padding: 100px 200px 20px;
+}
+
+.text-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
 .title {
-  position: absolute;
   width: 458px;
-  height: 135px;
-  top: 200px;
-  left: 221px;
+  /* height: 135px; */
   font-style: normal;
   font-size: 64px;
   font-weight: 500;
@@ -66,11 +90,8 @@ body {
 }
 
 .text {
-  position: absolute;
-  width: 394px;
-  height: 96px;
-  top: 320px;
-  left: 221px;
+  width: 600px;
+  /* height: 96px; */
   font-style: normal;
   font-size: 20px;
   font-weight: normal;
@@ -78,13 +99,30 @@ body {
 }
 
 .main-image-container {
-  position: absolute;
   width: 535.72px;
   height: 309.27px;
-  top: 220px;
-  left: 683.28px;
 }
 
 .main-image-container img {
-  height: 511.15px;
+  height: 500px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery > img {
+  width: 100%;
+}
+
+.gallery {
+  transition: all 500ms;
+  text-align: center;
+}
+
+.gallery:hover {
+  transform: scale(1.1);
 }
