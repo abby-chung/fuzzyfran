@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuzzy Fran</title>
     <link rel="stylesheet" href="style.css">
+    <!-- DataTables -->
+     <link rel="stylesheet" href="lib/datatables/dataTables.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D867BYGS8J"></script>
@@ -15,7 +17,6 @@
   gtag('config', 'G-D867BYGS8J');
 </script>
 <body>
-    <div class="wrapper">
         <header>
             <nav class="nav-container sticky">
                 <ul class="nav-menu">
@@ -36,6 +37,26 @@
             <div class="main-image-container">
                 <img src="./img/main-image.png" alt="Landing Page Image">
             </div>
+        </div>
+        <div class="table-display">
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1 Data 1</td>
+                        <td>Row 1 Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Data 1</td>
+                        <td>Row 2 Data 2</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
          <!-- Images -->
          <div class="image-container">
@@ -58,6 +79,14 @@
                 <img src="https://live.staticflickr.com/65535/51787139487_766df2349a_w.jpg" width="400" height="267" alt="AC2_6689"/>
            </div>
         </div>
-    </div>
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <!-- DataTables -->
+     <script src="lib/datatables/dataTables.js"></script>
+     <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+     </script>
 </body>
 </html>
