@@ -98,9 +98,15 @@ body {
   line-height: 32px;
 }
 
+.table-display {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .main-image-container {
   width: 535.72px;
   height: 309.27px;
+  margin-top: 80px;
 }
 
 .main-image-container img {
