@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuzzy Fran</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6808c894b.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D867BYGS8J"></script>
     <script>
@@ -17,31 +18,24 @@
      <link rel="stylesheet" href="lib/datatables/dataTables.css">
 </head>
 <body>
-        <header>
-            <nav class="nav-container sticky">
-                <ul class="nav-menu">
-                    <li><a href="/fuzzyfran">Home</a></li>
-                    <li><a href="https://chungchiachen.notion.site/Abby-Chung-Product-Manager-fd16288aefc247b99c0c06c72cb6d709?pvs=4">About</a></li>
-                    <li><a href="/fuzzyfran/blog">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Title & Text & Main Image -->
-         <div class="landing-container">
-            <!-- Title & Text -->
-            <div class="text-container">
-                <h1 class="title">Fuzzy Fran</h1>
-                <p class="text">
-                    An ongoing side project.<br>
-                    還不確定會發展成什麼的小網站，先來隨便填點東西。
-                </p>
-            </div>
-            <!-- Main Image -->
-            <div class="main-image-container">
-                <img src="./img/main-image.png" alt="Landing Page Image">
-            </div>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Fuzzy Fran</p>
+            <h1>Side project... thinking in progress...<br><span>先來隨便填點東西</span></h1>
         </div>
-        <div class="table-display">
+      </div>  
+    </div>
+        <!-- Table display starts here -->
+        <div class="container">
             <table id="myTable" class="display">
                 <thead>
                     <tr>
@@ -57,34 +51,34 @@
                         <td>6.32%</td>
                     </tr>
                     <tr>
-                        <td>Row 2 Data 1</td>
-                        <td>Row 2 Data 2</td>
-                        <td>Row 2 Data 3</td>
+                        <td>00878</td>
+                        <td>國泰永續高股息</td>
+                        <td>4.64%</td>
+                    </tr>
+                    <tr>
+                        <td>00713</td>
+                        <td>元大台灣高息低波</td>
+                        <td>5.49%</td>
+                    </tr>
+                    <tr>
+                        <td>00919</td>
+                        <td>群益台灣精選高息</td>
+                        <td>4.93%</td>
+                    </tr>
+                    <tr>
+                        <td>Row 5 Data 1</td>
+                        <td>Row 5 Data 2</td>
+                        <td>Row 5 Data 3</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-         <!-- Images -->
-         <div class="image-container">
-           <div class="gallery zoneone">
-                <img src="https://live.staticflickr.com/65535/54149653183_6ba91e8e53_z.jpg" width="400" height="267" alt="End of Autumn"/>
-           </div>
-           <div class="gallery zonetwo">
-               <img src="https://live.staticflickr.com/65535/54140390954_38b3a9ae1c_z.jpg" width="400" height="267" alt="Autumn in Black and White"/>
-           </div>
-           <div class="gallery zonethree">
-                <img src="https://live.staticflickr.com/65535/54139201172_4d9f8c31a7_z.jpg" width="400" height="267" alt="Shadow"/>
-           </div>
-           <div class="gallery zonefour">
-               <img src="https://live.staticflickr.com/65535/51793402495_4ac4dbdddb_w.jpg" width="400" height="267" alt="AC3_0149"/>
-           </div>
-           <div class="gallery zonefive">
-                <img src="https://live.staticflickr.com/65535/51792822784_841342698a_w.jpg" width="400" height="267" alt="Sitting Alone"/>
-           </div>
-           <div class="gallery zonesix">
-                <img src="https://live.staticflickr.com/65535/51787139487_766df2349a_w.jpg" width="400" height="267" alt="AC2_6689"/>
-           </div>
+    <!-- Footer Section -->
+     <div class="container">
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> CHIA-CHEN CHUNG, 2024</p>
         </div>
+     </div>
     <!-- jQuery -->
     <script src="lib/jquery/jquery-3.7.1.min.js"></script>
     <!-- DataTables -->
